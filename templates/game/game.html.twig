@@ -10,7 +10,7 @@
     <h2>{{ 'game.guess_the_word'|trans }}</h2>
 
     <p class="attempts">
-        {{ "game.still_have_%attempts_count%_remaning_attemps."|transchoice(0, {'%attempts_count%': 11}) }}
+        {{ "game.still_have_%attempts_count%_remaning_attemps."|transchoice(game.remainingAttempts, {'%attempts_count%': game.remainingAttempts}) }}
     </p>
 
     <ul class="word-letters">

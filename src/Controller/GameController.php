@@ -32,7 +32,7 @@ class GameController extends Controller
     }
 
     /**
-     * @Route("/won", name="won")
+     * @Route("/won", name="app_game_win")
      */
     public function won(GameRunner $runner)
     {
@@ -40,21 +40,22 @@ class GameController extends Controller
         try {
             $runner->resetGameOnSuccess();
         } catch (\Exception $e) {
-            return $this->redirectToRoute('app_game_play');
+            return $this->redirectToRoute('game_home');
         }
 
         return $this->render('game/won.html.twig', ['game' => $game]);
     }
 
     /**
-     * @Route("/failed", name="failed")
+     * @Route("/failed", name="app_game_fail")
      */
     public function failed(GameRunner $runner)
     {
+        $game = $runner->loadGame();
         try {
             $runner->resetGameOnFailure();
         } catch (\Exception $e) {
-            return $this->redirectToRoute('app_game_play');
+            return $this->redirectToRoute('game_home');
         }
 
         return $this->render('game/failed.html.twig', ['game' => $game]);
