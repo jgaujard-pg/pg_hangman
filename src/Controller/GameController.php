@@ -6,13 +6,13 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 /**
- * @Route("/game")
+ * @Route("/game", requirements={"_locale"="en|fr"})
  */
 class GameController extends Controller
 {
 
     /**
-     * @Route("/", name="game_home")
+     * @Route("/{_locale}", name="game_home")
      */
     public function game()
     {

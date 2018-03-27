@@ -20,9 +20,13 @@
         </div>
         <div class="col-md-8">
             <ul class="text-right">
-                <li><a href="#">fr</a></li>
-                <li><a href="#">en</a></li>
-                <li><a href="#">de</a></li>
+                <li>
+                    <a href="{{  path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'en'}))}}">fr</a>
+                </li>
+                <li>
+                    <a href="{{  path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'en'}))}}">en</a>
+                </li>
+                <li><a href="{{ path('homepage', {'_locale': 'de'}) }}">de</a></li>
             </ul>
 
             {{ include('_menu.html.twig') }}
