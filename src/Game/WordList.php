@@ -1,8 +1,8 @@
 <?php
 
-namespace AppBundle\Game;
+namespace App\Game;
 
-use AppBundle\Game\Loader\LoaderInterface;
+use App\Game\Loader\LoaderInterface;
 
 /**
  * Class WordList
