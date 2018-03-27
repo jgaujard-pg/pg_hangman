@@ -15,7 +15,12 @@ class SecurityController extends Controller
 {
 
     /**
-     * @Route("/register", name="register", methods={"GET", "POST"})
+     * @Route(
+     *     "/{_locale}/register",
+     *     name="register",
+     *     methods={"GET", "POST"},
+     *     requirements={"_locale"="en|fr|de"}
+     *     )
      */
     public function register(Request $request): Response
     {

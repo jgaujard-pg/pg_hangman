@@ -7,10 +7,10 @@
 {% block content %}
     {{ utils.breadcrumb({'home': 'game_home'}) }}
 
-    <h2>Guess the mysterious word</h2>
+    <h2>{{ 'game.guess_the_word'|trans }}</h2>
 
     <p class="attempts">
-        You still have 11 remaining attempts.
+        {{ "game.still_have_%attempts_count%_remaning_attemps."|transchoice(0, {'%attempts_count%': 11}) }}
     </p>
 
     <ul class="word-letters">
@@ -32,12 +32,12 @@
     </ul>
 
     <p class="attempts">
-        <a href="#">Reset the game</a>
+        <a href="#">{{ 'game.reset'|trans }}</a>
     </p>
 
     <br class="clearfix" />
 
-    <h2>Try a letter</h2>
+    <h2>{{ 'game.try_letter'|trans }}</h2>
 
     <ul>
         {% for letter in 'A'..'Z' %}
@@ -49,12 +49,12 @@
         {% endfor %}
     </ul>
 
-    <h2>Try a word</h2>
+    <h2>{{ 'game.try_word'|trans }}</h2>
 
     <form action="#" method="post" class="form-inline">
         <div class="form-group">
-            <input name="word" class="form-control mb-2" placeholder="Word"/>
+            <input name="word" class="form-control mb-2" placeholder="{{ 'game.word'|trans }}"/>
         </div>
-        <button>Let me guess...</button>
+        <button>{{ 'game.guess_word'|trans }}</button>
     </form>
 {% endblock %}

@@ -1,0 +1,19 @@
+menu.game: __menu.game
+menu.register: __menu.register
+menu.login: __menu.login
+menu.contact: __menu.contact
+game.testimonials: __game.testimonials
+header.title: __header.title
+page.title: __page.title
+game.game_over: __game.game_over
+game.you_lose: __game.you_lose
+game.play_again: __game.play_again
+game.guess_the_word: __game.guess_the_word
+game.reset: __game.reset
+game.try_letter: __game.try_letter
+game.try_word: __game.try_word
+game.word: __game.word
+game.guess_word: __game.guess_word
+game.you_win: __game.you_win
+game.congratulations: __game.congratulations
+'Play again': '__Play again'
