@@ -1,0 +1,12 @@
+game.testimonials: 'Livre d''or'
+header.title: 'Jeu du pendu'
+page.title: 'Application du jeu du pendu'
+menu.game: Jeu
+menu.register: 'S''enregistrer'
+menu.login: Connexion
+menu.contact: Contact
+contact.page_title: Contactez-nous
+contact.title: 'Formulaire de contact'
+contact.button.send: Envoyer
+homepage.title: 'Page d''acceuil'
+game.remaning: '{0} Vous n''avez plus de tentative.|{1} C''est votre dernière chance.|]1,Inf[ Il vous reste %count% tentatives.'

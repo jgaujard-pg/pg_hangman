@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title 'Hangman Game' %}</title>
+    <title>{% block title 'page.title'|trans %}</title>
     {% block stylesheets %}{% endblock %}
     <link rel="stylesheet" href="{{ asset('build/app.css') }}">
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
@@ -14,7 +14,7 @@
         <div class="col-md-4">
             <div id="logo">
                 <h1>
-                    <a href="{{ path('homepage') }}">Hangman</a>
+                    <a href="{{ path('homepage') }}">{{ 'header.title'|trans }}</a>
                 </h1>
             </div>
         </div>

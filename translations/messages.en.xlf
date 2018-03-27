@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="aY6ZbGw" resname="game.testimonials">
+        <source>game.testimonials</source>
+        <target>Testimonials</target>
+      </trans-unit>
+      <trans-unit id="QoCJXjL" resname="header.title">
+        <source>header.title</source>
+        <target>Hangman</target>
+      </trans-unit>
+      <trans-unit id="4eWNTVf" resname="page.title">
+        <source>page.title</source>
+        <target>Hangman game</target>
+      </trans-unit>
+      <trans-unit id="efXyC2o" resname="menu.game">
+        <source>menu.game</source>
+        <target>Game</target>
+      </trans-unit>
+      <trans-unit id="1slVsoT" resname="menu.register">
+        <source>menu.register</source>
+        <target>Register</target>
+      </trans-unit>
+      <trans-unit id="mMdg0uH" resname="menu.login">
+        <source>menu.login</source>
+        <target>Login</target>
+      </trans-unit>
+      <trans-unit id="C3HpPzJ" resname="menu.contact">
+        <source>menu.contact</source>
+        <target>Contact</target>
+      </trans-unit>
+      <trans-unit id="1q7j_ty" resname="contact.page_title">
+        <source>contact.page_title</source>
+        <target>Contact us</target>
+      </trans-unit>
+      <trans-unit id="V6An5qD" resname="contact.title">
+        <source>contact.title</source>
+        <target>Contact form</target>
+      </trans-unit>
+      <trans-unit id="jrcJlO." resname="contact.button.send">
+        <source>contact.button.send</source>
+        <target>Send</target>
+      </trans-unit>
+      <trans-unit id="bCwLjjP" resname="homepage.title">
+        <source>homepage.title</source>
+        <target>Homepage</target>
+      </trans-unit>
+      <trans-unit id="XVSvnI6" resname="game.remaning">
+        <source>game.remaning</source>
+        <target>{0} You have no remaning attempts|{1} This is your last chance|]1,Inf[ You still have %count% remaining attempts.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

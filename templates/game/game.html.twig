@@ -10,7 +10,7 @@
     <h2>Guess the mysterious word</h2>
 
     <p class="attempts">
-        You still have 11 remaining attempts.
+        {{ 'game.remaning'|transchoice(10, {'%count%':11}) }}
     </p>
 
     <ul class="word-letters">
