@@ -2,7 +2,7 @@
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: 'en'
-    dictionaries:
+    app.dictionaries:
         - '%kernel.project_dir%/data/words.txt'
         - '%kernel.project_dir%/data/words.xml'
 
@@ -19,7 +19,7 @@ services:
     # this creates a service per class whose id is the fully-qualified class name
     App\:
         resource: '../src/*'
-        exclude: '../src/{Entity,Migrations,Tests,Kernel.php}'
+        exclude: '../src/{Entity,Migrations,Tests,Form,Kernel.php}'
 
     # controllers are imported separately to make sure services can be injected
     # as action arguments even if you don't extend any base controller class
@@ -29,3 +29,17 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    App\Game\WordList:
+        calls:
+            - method: addLoader
+              arguments:
+                  - 'txt'
+                  - '@App\Game\Loader\TextFileLoader'
+            - method: addLoader
+              arguments:
+                  - 'xml'
+                  - '@App\Game\Loader\XmlFileLoader'
+            - method: loadDictionaries
+              arguments:
+                  - '%app.dictionaries%'

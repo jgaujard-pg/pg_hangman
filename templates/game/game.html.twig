@@ -14,25 +14,15 @@
     </p>
 
     <ul class="word-letters">
-        <li>?</li>
-        <li>?</li>
-        <li>?</li>
-        <li>?</li>
-        <li>?</li>
-        <li>?</li>
-        <li>?</li>
-        <li>?</li>
-        {#
         {% for letter in game.wordLetters %}
             <li class="{{ game.isLetterFound(letter) ? 'guessed' : 'not-guessed' }}">
                 {{- game.isLetterFound(letter) ? letter|upper : '?' -}}
             </li>
         {% endfor %}
-        #}
     </ul>
 
     <p class="attempts">
-        <a href="#">{{ 'game.reset'|trans }}</a>
+        <a href="{{ path('app_game_reset') }}">{{ 'game.reset'|trans }}</a>
     </p>
 
     <br class="clearfix" />
@@ -40,9 +30,9 @@
     <h2>{{ 'game.try_letter'|trans }}</h2>
 
     <ul>
-        {% for letter in 'A'..'Z' %}
+        {% for letter in 'a'..'z' %}
             <li class="letter btn">
-                <a href="#">
+                <a href="{{ path('app_game_play_letter', {'letter': letter}) }}">
                     {{ letter|upper }}
                 </a>
             </li>
@@ -51,7 +41,7 @@
 
     <h2>{{ 'game.try_word'|trans }}</h2>
 
-    <form action="#" method="post" class="form-inline">
+    <form action="{{ path('app_game_play_word') }}" method="post" class="form-inline">
         <div class="form-group">
             <input name="word" class="form-control mb-2" placeholder="{{ 'game.word'|trans }}"/>
         </div>
