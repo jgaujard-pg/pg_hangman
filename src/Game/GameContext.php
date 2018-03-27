@@ -4,6 +4,10 @@ namespace AppBundle\Game;
 
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 
+/**
+ * Class GameContext
+ * @package AppBundle\Game
+ */
 class GameContext implements GameContextInterface
 {
     private $session;

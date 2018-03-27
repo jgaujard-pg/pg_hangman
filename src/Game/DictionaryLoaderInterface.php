@@ -4,6 +4,10 @@ namespace AppBundle\Game;
 
 use AppBundle\Game\Loader\LoaderInterface;
 
+/**
+ * Interface DictionaryLoaderInterface
+ * @package AppBundle\Game
+ */
 interface DictionaryLoaderInterface
 {
     /**

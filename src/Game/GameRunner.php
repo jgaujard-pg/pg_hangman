@@ -4,6 +4,10 @@ namespace AppBundle\Game;
 
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
+/**
+ * Class GameRunner
+ * @package AppBundle\Game
+ */
 class GameRunner
 {
     /**

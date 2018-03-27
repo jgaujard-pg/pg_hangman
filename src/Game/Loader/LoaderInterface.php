@@ -2,6 +2,10 @@
 
 namespace AppBundle\Game\Loader;
 
+/**
+ * Interface LoaderInterface
+ * @package AppBundle\Game\Loader
+ */
 interface LoaderInterface
 {
     /**

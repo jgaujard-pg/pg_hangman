@@ -2,6 +2,10 @@
 
 namespace AppBundle\Game;
 
+/**
+ * Class Game
+ * @package AppBundle\Game
+ */
 class Game 
 {
     const MAX_ATTEMPTS = 11;

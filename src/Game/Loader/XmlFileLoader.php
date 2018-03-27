@@ -2,6 +2,10 @@
 
 namespace AppBundle\Game\Loader;
 
+/**
+ * Class XmlFileLoader
+ * @package AppBundle\Game\Loader
+ */
 class XmlFileLoader implements LoaderInterface
 {
     public function load($dictionary)

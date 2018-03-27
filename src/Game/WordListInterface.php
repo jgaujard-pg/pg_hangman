@@ -2,6 +2,11 @@
 
 namespace AppBundle\Game;
 
+/**
+ * Interface WordListInterface
+ * @package AppBundle\Game
+ *
+ */
 interface WordListInterface
 {
     /**

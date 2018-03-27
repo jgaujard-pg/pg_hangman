@@ -2,6 +2,10 @@
 
 namespace AppBundle\Game;
 
+/**
+ * Interface GameContextInterface
+ * @package AppBundle\Game
+ */
 interface GameContextInterface
 {
     /**

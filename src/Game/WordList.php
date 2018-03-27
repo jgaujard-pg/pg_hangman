@@ -4,6 +4,10 @@ namespace AppBundle\Game;
 
 use AppBundle\Game\Loader\LoaderInterface;
 
+/**
+ * Class WordList
+ * @package AppBundle\Game
+ */
 class WordList implements DictionaryLoaderInterface, WordListInterface
 {
     private $words;
