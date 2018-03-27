@@ -3,18 +3,18 @@
 {% import '_macro.html.twig' as utils %}
 
 {% block title %}
-    Hangman Game - You won!
+    {{ parent() }} - {{ 'game.you_win'|trans }}
 {% endblock %}
 
 {% block content %}
     {{ utils.breadcrumb({'home': 'game_home', 'you_won': app.request.attributes.get('_route')}) }}
 
-    <h2>Congratulations!</h2>
+    <h2>{{ 'game.congratulations'|trans }}</h2>
 
     <p>
         You found the word <strong>software</strong> and won this game.
     </p>
     <p>
-        <a href="{{ path('game_home') }}" class="btn btn-default">Play again</a>
+        <a href="{{ path('game_home') }}" class="btn btn-default">{{ 'Play again'|trans }}</a>
     </p>
 {% endblock %}

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="fr" target-language="en" datatype="plaintext" original="file.ext">
+  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
     <header>
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
@@ -52,6 +52,73 @@
       <trans-unit id="XVSvnI6" resname="game.remaning">
         <source>game.remaning</source>
         <target>{0} You have no remaning attempts|{1} This is your last chance|]1,Inf[ You still have %count% remaining attempts.</target>
+      <trans-unit id="aY6ZbGw" resname="game.testimonials">
+        <source>game.testimonials</source>
+        <target>Testimonials</target>
+      </trans-unit>
+      <trans-unit id="QoCJXjL" resname="header.title">
+        <source>header.title</source>
+        <target>Hangman</target>
+      </trans-unit>
+      <trans-unit id="4eWNTVf" resname="page.title">
+        <source>page.title</source>
+        <target>Hangman Game</target>
+      </trans-unit>
+      <trans-unit id="KDK7xCF" resname="game.game_over">
+        <source>game.game_over</source>
+        <target>Game Over !</target>
+      </trans-unit>
+      <trans-unit id="BHbG5sC" resname="game.you_lose">
+        <source>game.you_lose</source>
+        <target>You lose</target>
+      </trans-unit>
+      <trans-unit id="z2xhZ2b" resname="game.play_again">
+        <source>game.play_again</source>
+        <target>Play again</target>
+      </trans-unit>
+      <trans-unit id="Z.PnGem" resname="game.guess_the_word">
+        <source>game.guess_the_word</source>
+        <target>Let me guess</target>
+      </trans-unit>
+      <trans-unit id=".YzsRlF" resname="game.reset">
+        <source>game.reset</source>
+        <target>Reset the game</target>
+      </trans-unit>
+      <trans-unit id="iSkXaBG" resname="game.try_letter">
+        <source>game.try_letter</source>
+        <target>Try a letter</target>
+      </trans-unit>
+      <trans-unit id="JTL8VDs" resname="game.try_word">
+        <source>game.try_word</source>
+        <target>Try a word</target>
+      </trans-unit>
+      <trans-unit id="2.5Y0Bt" resname="game.word">
+        <source>game.word</source>
+        <target>Word</target>
+      </trans-unit>
+      <trans-unit id="6moJFFz" resname="game.guess_word">
+        <source>game.guess_word</source>
+        <target>Guess word</target>
+      </trans-unit>
+      <trans-unit id="fLXp_jY" resname="game.you_win">
+        <source>game.you_win</source>
+        <target>You win !</target>
+      </trans-unit>
+      <trans-unit id="iRaEPoT" resname="game.congratulations">
+        <source>game.congratulations</source>
+        <target>Congratulations !</target>
+      </trans-unit>
+      <trans-unit id="XvMNJ.i" resname="Play again">
+        <source>Play again</source>
+        <target>Play again</target>
+      </trans-unit>
+      <trans-unit id="xpBM9Tg" resname="{0} game.no_remaning_attemps| {1} game.one_remaning_attempt| ]1, Inf[ game.still_have_%attempts_count%_remaning_attemps.">
+        <source>{0} game.no_remaning_attemps| {1} game.one_remaning_attempt| ]1, Inf[ game.still_have_%attempts_count%_remaning_attemps.</source>
+        <target>{0} You're done ! No remaining attempts| {1} This is your last chance !| ]1, Inf[ You still have %attempts_count% remaning attempts.</target>
+      </trans-unit>
+      <trans-unit id="I15wDfK" resname="game.still_have_%attempts_count%_remaning_attemps.">
+        <source>game.still_have_%attempts_count%_remaning_attemps.</source>
+        <target>{0} You're done ! No remaining attempts| {1} This is your last chance !| ]1, Inf[ You still have %attempts_count% remaning attempts.</target>
       </trans-unit>
     </body>
   </file>

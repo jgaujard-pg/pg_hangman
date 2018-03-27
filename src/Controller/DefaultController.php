@@ -10,7 +10,7 @@ class DefaultController extends Controller
 {
 
     /**
-     * @Route("/", name="homepage")
+     * @Route("/{_locale}", name="homepage", requirements={"_locale":"en|fr|de"})
      */
     public function indexAction(Request $request)
     {
