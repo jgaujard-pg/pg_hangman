@@ -1,6 +1,6 @@
 <?php
 
-namespace AppBundle\Game\Loader;
+namespace App\Game\Loader;
 
 interface LoaderInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace AppBundle\Game;
+namespace App\Game;
 
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
