@@ -2,6 +2,7 @@
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: 'en'
+    app.allowed_locales_pattern: 'en|de|fr'
     app.dictionaries:
         - '%kernel.project_dir%/data/words.txt'
         - '%kernel.project_dir%/data/words.xml'

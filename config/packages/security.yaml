@@ -1,13 +1,25 @@
 security:
+
+    encoders:
+        App\Entity\Player:
+            algorithm:            bcrypt
+            cost:                 13
+
+
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:
-        in_memory: { memory: ~ }
+        #in_memory: { memory: ~ }
+        player_provider:
+            entity:
+                class:              App\Entity\Player
+                property:           username
+
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
         main:
-            anonymous: true
+            #anonymous: true
 
             # activate different ways to authenticate
 
@@ -17,8 +29,45 @@ security:
             # form_login: true
             # https://symfony.com/doc/current/security/form_login_setup.html
 
+            pattern:    ^/(en|fr|de)/game/
+            provider:   player_provider
+            anonymous:  ~
+
+            form_login:
+                # submit the login form here
+                check_path: login
+
+                # the user is redirected here when they need to log in
+                login_path: login
+
+                # if true, forward the user to the login form instead of redirecting
+                use_forward: false
+
+                # field names for the username and password fields
+                username_parameter: _username
+                password_parameter: _password
+
+                # csrf token options
+                csrf_parameter:       _csrf_token
+                csrf_token_id:        authenticate
+                csrf_token_generator: security.csrf.token_manager
+
+                # by default, the login form *must* be a POST, not a GET
+                post_only:      true
+                remember_me:    false
+
+                # by default, a session must exist before submitting an authentication request
+                # if false, then Request::hasPreviousSession is not called during authentication
+                require_previous_session: true
+            logout:
+                path:   logout
+                target: /
+                invalidate_session: false
+
+
     # Easy way to control access for large sections of your site
     # Note: Only the *first* access control that matches will be used
     access_control:
         # - { path: ^/admin, roles: ROLE_ADMIN }
         # - { path: ^/profile, roles: ROLE_USER }
+        - { path: ^/(en|fr|de)/game/login, roles: IS_AUTHEnTICATED_ANONYMOUSLY }
