@@ -18,7 +18,7 @@ class PlayerType extends AbstractType
             ->add('username')
             ->add('fullname')
             ->add('email', EmailType::class)
-            ->add('date_of_birth', BirthdayType::class)
+            ->add('dateOfBirth', BirthdayType::class)
             ->add('password', RepeatedType::class, [
                 'type' => PasswordType::class,
                 'options' => ['attr' => ['class' => 'password-field']],
