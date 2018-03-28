@@ -1,15 +1,13 @@
-game.testimonials: 'Livre d''or'
-header.title: 'Jeu du pendu'
-page.title: 'Application du jeu du pendu'
-menu.game: Jeu
-menu.register: 'S''enregistrer'
-menu.login: Connexion
-menu.contact: Contact
-contact.page_title: Contactez-nous
-contact.title: 'Formulaire de contact'
-contact.button.send: Envoyer
-homepage.title: 'Page d''acceuil'
-game.remaning: '{0} Vous n''avez plus de tentative.|{1} C''est votre dernière chance.|]1,Inf[ Il vous reste %count% tentatives.'
+game.testimonials: __game.testimonials
+header.title: __header.title
+page.title: __page.title
+contact.page_title: __contact.page_title
+contact.title: __contact.title
+contact.button.send: __contact.button.send
+menu.game: __menu.game
+menu.register: __menu.register
+menu.login: __menu.login
+menu.contact: __menu.contact
 game.you_win: __game.you_win
 game.congratulations: __game.congratulations
 'Play again': '__Play again'
@@ -23,3 +21,4 @@ game.guess_word: __game.guess_word
 game.game_over: __game.game_over
 game.you_lose: __game.you_lose
 game.play_again: __game.play_again
+homepage.title: __homepage.title

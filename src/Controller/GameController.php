@@ -12,7 +12,7 @@ use App\Game\Loader\TextFileLoader;
 use App\Game\Loader\XmlFileLoader;
 
 /**
- * @Route("/game", requirements={"_locale"="en|fr"})
+ * @Route("/{_locale}/game", requirements={"_locale"="en|fr|de"})
  */
 class GameController extends Controller
 {
